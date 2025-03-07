@@ -1,17 +1,21 @@
-type terrain =
+type terrainBase =
     "Flat Desert" | "Rough Desert" | "Vegetated Desert (Sagebrush Steppe)" | "Wet Desert (Oasis)" | 
     "Flat Grassland" | "Rough Grassland" | "Vegetated Grassland (Forest)" | "Wet Grassland (Marsh)" | 
     "Flat Plains" | "Rough Plains" | "Vegetated Plains (Savanna Woodland)" | "Wet Plains (Watering Hole)" | 
     "Flat Tropical" | "Rough Tropical" | "Vegetated Tropical (Rainforest)" | "Wet Tropical (Mangrove)" | 
     "Flat Tundra" | "Rough Tundra" | "Vegetated Tundra (Taiga)" | "Wet Tundra (Tundra Bog)" |
-    "Flat" | "Rough" | "Vegetated" | "Wet" | "Desert" | "Grassland" | "Plains" | "Tropical" | "Tundra"
+    "Flat" | "Rough" | "Vegetated" | "Wet" | "Desert" | "Grassland" | "Plains" | "Tropical" | "Tundra" | "Coast" | "Navigable River" | "River" | null
+
+type terrain = 
+    terrainBase | `Adjacent ${terrainBase}`
 
 type unitTypes = 
-    "Melee" | "Ranged" | "Cavalry" | "Siege" | "Naval" | "Air" | 
-    "Merchant" | "Settler" | "Migrant" | "Scout" | "Missionary" | "Treasure fleet" | "Physician" | "Great banker" | "Prospector" | "Zamindar"
+    "Infantry" | "Ranged" | "Cavalry" | "Siege" | "Naval" | "Air" | 
+    "Merchant" | "Settler" | "Migrant" | "Scout" | "Missionary" | "Great Person" | "Treasure fleet" | "Physician" | "Great banker" | "Prospector" | "Zamindar"
 
 type adjacency = 
-    "Resource" | "Natural Wonders" | "Wonders" | "Mountain" | "Coastal" | "Navigable River" | "Hawilt" | null
+    "Resource" | "Natural Wonders" | "Wonders" | "Mountain" | "Coastal" | "Navigable River" | "Hawilt" | "Urban district" | "Desert" | "Quarters" | "Great Wall" | null
+
 
 type Type =
     "Cultural" | "Scientific" | "Economic" | "Diplomatic" | "Militaristic" | "Expansionist" | "Wildcard"
@@ -25,6 +29,9 @@ type unlocksExploration =
 
 type unlocksModern =
     "America" | "Buganda" | "French Empire" | "Great Britain" | "Meiji Japan" | "Mexico" | "Mughal" | "Prussia" | "Qing" | "Russia" | "Siam" | null
+
+type buildingTypes = 
+    "Warehouse" | "Food" | "Gold" | "Happiness" | "Culture" | "Military and Production" | "Science" | "Improvement" | "Quarter"
 
 export interface Civ {
     id: number,
@@ -40,22 +47,22 @@ export interface Civ {
         abillity:string[],
         }[],
     uniqueBuildings: {
-        type:"Warehouse" | "Food" | "Gold" | "Happiness" | "Culture" | "Military and Production" | "Science" | "Improvement",
+        type: buildingTypes,
         ageless: "Ageless" | "Not Ageless",
         name:string,
-        attribute:string,
+        attribute:string[],
         Adjacency:adjacency[],
         placement: terrain[],
         unlocks:string,
         }[],
     wonderBonus: {
         name:string,
-        placement:terrain,
-        attribute:string,
+        placement:terrain[],
+        attribute:string[],
         unlocks: string
         },
     civics: {
-        line: "First-Line" | "Second-Line" | "Third-Line",
+        tier: "First-Tier" | "Second-Tier" | "Third-Tier",
         name: string,
         unlocks?:string[],
         bonus?:string[],
