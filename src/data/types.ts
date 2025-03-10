@@ -4,17 +4,19 @@ type terrainBase =
     "Flat Plains" | "Rough Plains" | "Vegetated Plains (Savanna Woodland)" | "Wet Plains (Watering Hole)" | 
     "Flat Tropical" | "Rough Tropical" | "Vegetated Tropical (Rainforest)" | "Wet Tropical (Mangrove)" | 
     "Flat Tundra" | "Rough Tundra" | "Vegetated Tundra (Taiga)" | "Wet Tundra (Tundra Bog)" |
-    "Flat" | "Rough" | "Vegetated" | "Wet" | "Desert" | "Grassland" | "Plains" | "Tropical" | "Tundra" | "Coast" | "Navigable River" | "River" | null
+    "Flat" | "Rough" | "Vegetated" | "Wet" | "Desert" | "Grassland" | "Plains" | "Tropical" | "Tundra" | "Coast" | "Navigable River" | "River" | 
+    "District" | null
 
 type terrain = 
     terrainBase | `Adjacent ${terrainBase}`
 
 type unitTypes = 
-    "Infantry" | "Ranged" | "Cavalry" | "Siege" | "Naval" | "Air" | 
+    "Infantry" | "Ranged" | "Cavalry" | "Siege" | "Naval" | "Air" | "Army Commander" | 
     "Merchant" | "Settler" | "Migrant" | "Scout" | "Missionary" | "Great Person" | "Treasure fleet" | "Physician" | "Great banker" | "Prospector" | "Zamindar"
 
 type adjacency = 
-    "Resource" | "Natural Wonders" | "Wonders" | "Mountain" | "Coastal" | "Navigable River" | "Hawilt" | "Urban district" | "Desert" | "Quarters" | "Great Wall" | null
+    "Resource" | "Natural Wonders" | "Wonders" | "Mountain" | "Coastal" | "Navigable River" | "Hawilt" | "Urban district" | "Desert" | "Quarters" | "Great Wall" | "Culture Buildings" | "Happiness Buildings" |
+     null
 
 
 type Type =
