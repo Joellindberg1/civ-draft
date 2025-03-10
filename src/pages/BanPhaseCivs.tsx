@@ -14,17 +14,17 @@ import Footer from "../Components/Footer/Footer"
 
 
 
-const FinalDraft: React.FC = () => {
+const BanPhaseCivs: React.FC = () => {
     const navigate = useNavigate();
 
     return (
         <div>
-          <Header text="Finished Draft" className="finished"/>
-          <Button text="One More Draft" onClick={() => navigate("/FinalDraft")} className="finished" />
-          <Button text="Home" onClick={() => navigate("/Home")} className="finished" />
+          <Header text="Ban Civs" className="banCivs"/>
+          <Header text="You can ban X Civs for how many players you are" className="banCivs2"/>
+          <Button text="Finish Draft" onClick={() => navigate("/FinalDraft")} className="banCiv" />
           <Footer />  
         </div>
       );
     };
     
-    export default FinalDraft;
+    export default BanPhaseCivs;
