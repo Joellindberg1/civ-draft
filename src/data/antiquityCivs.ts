@@ -59,8 +59,8 @@ const antiquityCivs:Civ [] = [
                 tier:"First-Tier",
                 name:"Periplus of the erytheraean sea",
                 unlocks:[
-                    "Hawilt - Unique improvement.",
-                    "Wonder Great Stele (Bonus production towards)."
+                    "Hawilt (Unique improvement).",
+                    "Great Stele (Wonder)."
                 ],
                 bonus:["+1 Resource capacity in settlements on coast or Navigable Rivers."],
                 mastery: {
@@ -159,7 +159,7 @@ const antiquityCivs:Civ [] = [
             unlocks: "Civ Civic-tree - First-Tier",
             },
             {
-            type: "Production",
+            type: "Military and Production",
             ageless: "Ageless",
             name: "Cothon",
             attribute: [
@@ -187,7 +187,7 @@ const antiquityCivs:Civ [] = [
             {
                 tier: "First-Tier",
                 name: "Wisom of Tanit",
-                unlocks: ["Dockyard"],
+                unlocks: ["Dockyard (Unique Building"],
                 bonus: ["+15 Sea Trade Route Range. +3 Gold in the Capital for every trade route from the Capital."], 
                 mastery:{
                     bonus:["Increase the number of Resources that may be assigned to the Capital by 3."],
@@ -203,8 +203,8 @@ const antiquityCivs:Civ [] = [
                 tier: "First-Tier",
                 name: "Shipsheds",
                 unlocks: [
-                    "Cothon",
-                    "Byrsa"
+                    "Cothon (Unique Building).",
+                    "Byrsa (Wonder)"
                 ],
                 bonus:["+1 Movement to Naval Units"],
                 mastery:{
@@ -319,7 +319,7 @@ const antiquityCivs:Civ [] = [
             {
                 tier: "First-Tier",
                 name: "Arrival of Hapi",
-                unlocks: ["Mortuary Temple"],
+                unlocks: ["Mortuary Temple (Unique Building)"],
                 bonus: ["Minor RIvers do not end Unit movement."], 
                 tradition: [
                     {
@@ -331,7 +331,7 @@ const antiquityCivs:Civ [] = [
             {
                 tier: "First-Tier",
                 name: "Scales of Anubis",
-                unlocks: ["Mastaba"],
+                unlocks: ["Mastaba (Unique Building)"],
                 bonus: ["Medjay generate +1 Gold when stationed in a settlement you own."], 
                 tradition: [
                     {
@@ -343,7 +343,7 @@ const antiquityCivs:Civ [] = [
             {
                 tier: "Second-Tier",
                 name: "Light of Amun-Ra",
-                unlocks: ["Pyramids"],
+                unlocks: ["Pyramids (Wonder)"],
                 bonus: ["+5 Gold on the palace."], 
                 tradition: [
                     {
@@ -436,7 +436,7 @@ const antiquityCivs:Civ [] = [
             {
                 tier: "First-Tier",
                 name: "Ekklesia",
-                unlocks: ["Odeon"], 
+                unlocks: ["Odeon (Unique Building)"], 
                 tradition: [
                     {
                         name:"Xenia",
@@ -450,7 +450,7 @@ const antiquityCivs:Civ [] = [
             {
                 tier: "First-Tier",
                 name: "Agoge",
-                unlocks: ["Parthenon"],
+                unlocks: ["Parthenon (Unique Building)"],
                 tradition: [
                     {
                         name:"Strategoi",
@@ -467,7 +467,7 @@ const antiquityCivs:Civ [] = [
                 bonus: ["+2 Culture for each City-State you are Suzerain of."], 
                 settlementCap:"+1 Settlement cap",
                 mastery:{
-                    unlocks:["Oracle",],
+                    unlocks:["Oracle (Wonder)",],
                     tradition: [
                         {
                             name: "Delian League",
@@ -533,7 +533,7 @@ const antiquityCivs:Civ [] = [
             {
                 tier: "First-Tier",
                 name: "Zhi",
-                unlocks: ["Great Wall"],
+                unlocks: ["Great Wall(Unique Improvement)"],
                 bonus: ["Sience Buildings gain a +1 Science Adjacency for Quarters."], 
                 settlementCap:"+1 Settlement cap",
             },
@@ -562,7 +562,7 @@ const antiquityCivs:Civ [] = [
             {
                 tier: "Third-Tier",
                 name: "Junzi",
-                unlocks: ["Weiyang Palace"],
+                unlocks: ["Weiyang Palace (Wonder)"],
                 bonus: ["+10% Science in the capital"], 
                 tradition: [
                     {
@@ -636,7 +636,7 @@ const antiquityCivs:Civ [] = [
             {
                 tier: "First-Tier",
                 name: "Mousong",
-                unlocks: ["Baray"],
+                unlocks: ["Baray (Unique Improvement)"],
                 bonus: ["Improvements, Buildings and Districts do not get pillaged by floods"], 
                 tradition: [
                     {
@@ -648,7 +648,7 @@ const antiquityCivs:Civ [] = [
             {
                 tier: "Second-Tier",
                 name: "Amnach",
-                unlocks: ["Angkor Wat"],
+                unlocks: ["Angkor Wat (Wonder)"],
                 bonus: ["The Yuthahathi gets +1 Movement."], 
                 tradition: [
                     {
@@ -749,8 +749,8 @@ const antiquityCivs:Civ [] = [
                 tier: "First-Tier",
                 name: "Acharya",
                 unlocks: [
-                    "Dharamshala",
-                    "Vihara"
+                    "Dharamshala (Unique Building)",
+                    "Vihara (Unique Building)"
                 ], 
                 tradition: [
                     {
@@ -784,7 +784,7 @@ const antiquityCivs:Civ [] = [
             {
                 tier: "Third-Tier",
                 name: "Mantriparishad",
-                unlocks: ["Sanchi Stupa"],
+                unlocks: ["Sanchi Stupa (Wonder)"],
                 bonus: ["+10% to all yields in Settlements not founded by you."], 
                 tradition: [
                     {
@@ -852,7 +852,7 @@ const antiquityCivs:Civ [] = [
                 unlocks: "Civ Civics-Tree - First-Tier",
             },
             {
-                type: "Sience",
+                type: "Science",
                 ageless: "Ageless",
                 name: "K'uh Nah",
                 attribute: [
@@ -867,7 +867,7 @@ const antiquityCivs:Civ [] = [
         ], 
         wonderBonus: {
             name: "Mundo Perdido",
-            placement: "Tropical",
+            placement: ["Tropical"],
             attribute:["+1 Happiness and Science on Tropical terrain in this Settlement."],
             unlocks: "Civ Civics-Tree - Third-Tier(Mastery) and Civics Tree - Mysticism (Mastery)"
         },
@@ -875,7 +875,7 @@ const antiquityCivs:Civ [] = [
             {
                 tier: "First-Tier",
                 name: "Lords of Xibalba",
-                unlocks: ["Jalaw"],
+                unlocks: ["Jalaw (Unique Building)"],
                 bonus: ["Hul'Che and Jaguar Slayers gain Stealth in Vegetated Terrain."], 
                 tradition: [
                     {
@@ -887,7 +887,7 @@ const antiquityCivs:Civ [] = [
             {
                 tier: "First-Tier",
                 name: "Rain of Chaac",
-                unlocks: ["K'uh Nah"],
+                unlocks: ["K'uh Nah (Unique Building)"],
                 bonus: ["The Altar gains a +1 Science Adjacency from Vegetated Terrain."], 
                 tradition: [
                     {
@@ -904,7 +904,7 @@ const antiquityCivs:Civ [] = [
                     "After studying a Civic, gain Science equal to 10% of its cost."
                 ], 
                 mastery:{
-                    unlocks:["Mundo Perdido",],
+                    unlocks:["Mundo Perdido (Wonder)",],
                     tradition: [
                         {
                             name: "Tzolk'in",
@@ -926,125 +926,322 @@ const antiquityCivs:Civ [] = [
     {
         id: 8,
         age: "Antiquity",
-        name: "",
-        type1: "",
-        type2: "",
-        attribute: ["",],
+        name: "Mississippian",
+        type1: "Economic",
+        type2: "Expansionist",
+        attribute: [
+            "All Buildings receive a +1 Food Adjacency for Resources.",
+            "+30% Production towards constructing Monks mound."
+        ],
         uniqueUnits: [
             {
-                type:"",
-                name:"",
-                unlocks:"",
-                abillity:[""],
+                type:"Ranged",
+                name:"Burning Arrow",
+                unlocks:"Sience tree - Animal Husbandry",
+                abillity:[
+                    "Increased bombard strngth.",
+                    "+3 Combat strength against siege units.",
+                    "Applies the Burning status to tiles for 2 turns."
+                ],
+            },
+            {
+                type:"Merchant",
+                name:"Watonathi",
+                unlocks:"Civics tree - Code of laws",
+                abillity:["Gain 25 gold per REsource acquired when creating a trade route."],
             },
         ],
         uniqueBuildings: [
             {
-                type: "",
-                ageless: "",
-                name: "",
-                attribute: ["",],
-                Adjacency:[],
-                placement: [""],
-                unlocks: "",
+                type: "Improvement",
+                ageless: "Ageless",
+                name: "Potkop",
+                attribute: [
+                    "+1 gold.",
+                    "+1 Food adjacency",
+                    "Does not remove Warehouse bonuses on a tile."
+                ],
+                Adjacency:["Resource"],
+                placement: ["Flat"],
+                unlocks: "Civ Civics-Tree - First-Tier",
             },
         ], 
         wonderBonus: {
-            name: "",
-            placement: "",
-            attribute:[""],
-            unlocks: ""
+            name: "Monks Mound",
+            placement: ["Adjacent River"],
+            attribute:[
+                "+3 Food",
+                "+4 Resource capacity in this Settlement"    
+            ],
+            unlocks: "Civ Civics-Tree - (First-Tier Mastery) and Civics Tree - Commerce"
         },
         civics: [
             {
-                tier: "",
-                name: "",
-                unlocks: [""],
-                bonus: [""], 
-                tradition: [
-                    {
-                        name:"",
-                        attribute:"",
-                    },
-                ],
-                settlementCap:"",
+                tier: "First-Tier",
+                name: "Earthworks",
+                unlocks: ["Potkop (Unique Building)"],
+                bonus: ["+10% Production towards constructing buildings"], 
                 mastery:{
-                    unlocks:["",],
-                    bonus:[""],
+                    unlocks:["Monks Mound (Wonder)",],
                     tradition: [
                         {
-                            name: "",
-                            attribute: ""
+                            name: "Shell-Tempered Pottery",
+                            attribute: "All Buildings receive a +1 Gold adjacency for Resources."
                         }
                     ],
-                    settlementCap:"",
+                    settlementCap:"+1 Settlement cap",
                 }
             },
+            {
+                tier: "Second-Tier",
+                name: "Waahih",
+                bonus: ["Burning Arrows can pillage within 2 tiles for 1 movement."], 
+                tradition: [
+                    {
+                        name:"Atassa",
+                        attribute:"+4 Combat Strength for Ranged units when defending.",
+                    },
+                ],
+            },
+            {
+                tier: "Second-Tier",
+                name: "Cah-Nah-Ha",
+                bonus: ["+2 Resource capacity in the Capital."], 
+                tradition: [
+                    {
+                        name:"Gift Economy",
+                        attribute:"+1 Gold and Happiness for every imported Resource.",
+                    },
+                ],
+            },
         ],
-        startBias:[""],
-        unlocksExploration: [""],
-        unlocksModern: [],
+        startBias:["Flat", "River"],
+        unlocksExploration: ["Shawnee", "Hawai'i", "Inca"],
+        unlocksModern: [null],
     },
     {
         id: 9,
         age: "Antiquity",
-        name: "",
-        type1: "",
-        type2: "",
-        attribute: ["",],
+        name: "Persia",
+        type1: "Economic",
+        type2: "Militaristic",
+        attribute: [
+            "Infantry Units receive +3 Combat Strength when attacking.",
+            "+30% Production towards constructing the Gate of All Nations."
+        ],
         uniqueUnits: [
             {
-                type:"",
-                name:"",
-                unlocks:"",
-                abillity:[""],
+                type:"Infantry",
+                name:"Immortal",
+                unlocks:"Science tree - Bronze Working",
+                abillity:["Heals 15 HP after defeating an enemy Unit."],
+            },
+            {
+                type:"Army Commander",
+                name:"Hazarapatis",
+                unlocks:"Dicipline",
+                abillity:["Starts with the initiative promotion."],
             },
         ],
         uniqueBuildings: [
             {
-                type: "",
-                ageless: "",
-                name: "",
-                attribute: ["",],
-                Adjacency:[],
-                placement: [""],
-                unlocks: "",
+                type: "Improvement",
+                ageless: "Ageless",
+                name: "Pairidaeza",
+                attribute: [
+                    "+1 Culture and gold.",
+                    "+1 Happiness adjacency. (Unlocked in Civ Civic-Tree).",
+                    "Does not remove Warehouse bonuses on a tile.",
+                    "Cannout be placed adjacent to another Pairidaeza."
+                ],
+                Adjacency:["Quarters"],
+                placement: [null],
+                unlocks: "Civ civics-Tree - Second-Tier",
             },
         ], 
         wonderBonus: {
-            name: "",
-            placement: "",
-            attribute:[""],
-            unlocks: ""
+            name: "Gate of All Nations",
+            placement: ["Adjacent District"],
+            attribute:["+2 war support on all wars"],
+            unlocks: "Civ Civics-tree - Second-Tier and Civic tree - Dicipline (Mastery)"
         },
         civics: [
             {
-                tier: "",
-                name: "",
-                unlocks: [""],
-                bonus: [""], 
+                tier: "First-Tier",
+                name: "Spada",
+                bonus: ["-1 GOld maintenance for units"], 
                 tradition: [
                     {
-                        name:"",
-                        attribute:"",
+                        name:"Kara",
+                        attribute:"+50% Production towards training infantry units",
                     },
                 ],
-                settlementCap:"",
+            },
+            {
+                tier: "Second-Tier",
+                name: "Satrapies",
+                unlocks: [
+                    "Pairidaeza (Unique building)",
+                    "Gate of All Nations (Wonder)"
+                ], 
+                tradition: [
+                    {
+                        name:"Angarium",
+                        attribute:"+3 Gold for every town.",
+                    },
+                ],
                 mastery:{
-                    unlocks:["",],
-                    bonus:[""],
+                    bonus:["The Pairidaeza gains +1 Happiness from adjacent Quarters."],
+                    settlementCap:"+1 Settlement cap",
+                }
+            },
+            {
+                tier: "Third-Tier",
+                name: "Achaemenid Empire",
+                bonus: ["+5 Gold for every different Civilization you have captured a Settlement from."], 
+                mastery:{
                     tradition: [
                         {
-                            name: "",
-                            attribute: ""
+                            name: "Shahanshah",
+                            attribute: "+3 Combat Strength for units in enemy territory."
                         }
                     ],
-                    settlementCap:"",
+                    settlementCap:"+1 Settlement cap",
                 }
             },
         ],
-        startBias:[""],
-        unlocksExploration: [""],
-        unlocksModern: [],
+        startBias:["Desert", "Plains"],
+        unlocksExploration: ["Abbasid", "Mongolia"],
+        unlocksModern: ["Mughal"],
+    },
+    {
+        id: 10,
+        age: "Antiquity",
+        name: "Rome",
+        type1: "Cultural",
+        type2: "Militaristic",
+        attribute: [
+            "+1 Culture on Districts in the Capital City and City Centers in towns.",
+            "+30% Production towards Constructing the Colosseum."
+        ],
+        uniqueUnits: [
+            {
+                type:"Infantry",
+                name:"Legion",
+                unlocks:"Bronze Working",
+                abillity:["+2 Combat Strength for every Tradition in the Government"],
+            },
+            {
+                type:"Army Commander",
+                name:"Legatus",
+                unlocks:"Dicipline",
+                abillity:["Gains 1 charge to create a new Settlement for every 3 Levels it has."],
+            },
+        ],
+        uniqueBuildings: [
+            {
+                type: "Quarter",
+                ageless: "Ageless",
+                name: "Forum",
+                attribute: [
+                    "Created by constructing the Basilica and Temple of Jupiter in the same District.",
+                    "+1 Culture and Gold for every Unique Tradition in the Government."
+                ],
+                Adjacency:[null],
+                placement: [null],
+                unlocks: "Civ Civics-Tree - First-Tier",
+            },
+            {
+                type: "Gold",
+                ageless: "Ageless",
+                name: "Basilica",
+                attribute: [
+                    "Base yeild: +4 Gold",
+                    "+1 influence adjacency."
+                ],
+                Adjacency:["Culture Buildings", "Wonders"],
+                placement: [null],
+                unlocks: "Civ Civics-Tree - First-Tier",
+            },
+            {
+                type: "Happiness",
+                ageless: "Ageless",
+                name: "Temple of Jupiter",
+                attribute: [
+                    "Base Yeild: +3 Happiness.",
+                    "+1 Culture Adjacency"
+                ],
+                Adjacency:["Happiness Buildings", "Wonders"],
+                placement: [null],
+                unlocks: "Civ Civics-Tree - First-Tier",
+            },
+        ], 
+        wonderBonus: {
+            name: "Colosseum",
+            placement: ["Adjacent District"],
+            attribute:[
+                "+3 Culture.",
+                "+2 Happiness on Quarters in this Settlement."
+            ],
+            unlocks: "Civ Civics-tree - Third-Tier and Civics tree - Entertainment"
+        },
+        civics: [
+            {
+                tier: "First-Tier",
+                name: "Exercitus",
+                unlocks: ["Temple of Jupiter (Unqiue Building)"], 
+                tradition: [
+                    {
+                        name:"Auxilia",
+                        attribute:"+5% Production towards Military Units in the Capital for every town.",
+                    },
+                ],
+                mastery:{
+                    bonus:["The Legatus gains the Bulwark Promotion for free."],
+                }
+            },
+            {
+                tier: "First-Tier",
+                name: "Civis Romanus",
+                unlocks: ["Basilica (Unique Building"], 
+                tradition: [
+                    {
+                        name:"Cursus Honorum",
+                        attribute:"Training an infantry Unit grants Culture equal to 25+% of its Production cost.",
+                    },
+                ],
+                mastery:{
+                    bonus:["+2 Gold in the Capital for every Town you own."],
+                }
+            },
+            {
+                tier: "Second-Tier",
+                name: "Legatus Pro Praetore",
+                bonus: ["Gain a free Infantry Unit in new Settlements that you found."], 
+                tradition: [
+                    {
+                        name:"Latinitas",
+                        attribute:"+10% Food, Gold and Culture in towns with a Specialization.",
+                    },
+                ],
+                settlementCap:"+1 Settlement Cap",
+            },
+            {
+                tier: "Third-Tier",
+                name: "Senatus Populusque Romanus",
+                unlocks: ["Colosseum (Wonder)"],
+                bonus: ["+1 Social Policy slot."], 
+                tradition: [
+                    {
+                        name:"Priceps Civitatis",
+                        attribute:"+1 Production on Urban DIstricts in your Capital",
+                    },
+                ],
+                settlementCap:"+1 Settlement cap",
+            },
+        ],
+        startBias:["Grassland"],
+        unlocksExploration: ["Norman", "Spain"],
+        unlocksModern: ["Great Britain", "America", "French Empire", "Prussia"],
     },
 ]
