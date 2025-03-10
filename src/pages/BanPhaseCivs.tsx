@@ -21,6 +21,7 @@ const BanPhaseCivs: React.FC = () => {
         <div>
           <Header text="Ban Civs" className="banCivs"/>
           <Header text="You can ban X Civs for how many players you are" className="banCivs2"/>
+          <Button text="Previous" onClick={() => navigate("/Home")} className="banCiv" />
           <Button text="Finish Draft" onClick={() => navigate("/FinalDraft")} className="banCiv" />
           <Footer />  
         </div>

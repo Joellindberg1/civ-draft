@@ -25,13 +25,16 @@ import FinalDraft from "./pages/FinalDraft"
 const App: React.FC = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/setup" element={<Setup />} />
-        <Route path="/banPhaseLeaders" element={<BanPhaseLeaders />} />
-        <Route path="/banPhaseCivs" element={<BanPhaseCivs />} />
-        <Route path="/FinalDraft" element={<FinalDraft />} />
-      </Routes>
+      <div className="app-container">
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/setup" element={<Setup />} />
+          <Route path="/banPhaseLeaders" element={<BanPhaseLeaders />} />
+          <Route path="/banPhaseCivs" element={<BanPhaseCivs />} />
+          <Route path="/FinalDraft" element={<FinalDraft />} />
+        </Routes>
+        <footer/>
+      </div>
     </Router>
   );
 };

@@ -20,7 +20,8 @@ const Setup: React.FC = () => {
     return (
         <div>
           <Header text="Set up the draft" className="setup"/>
-          <Button text="Start Ban phase " onClick={() => navigate("/BanPhaseLeaders")} className="setup" />
+          <Button text="Previous" onClick={() => navigate("/Home")} className="setup" />
+          <Button text="Start Ban phase" onClick={() => navigate("/BanPhaseLeaders")} className="setup" />
           <Footer />    
         </div>
       );
