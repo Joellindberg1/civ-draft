@@ -1,0 +1,8 @@
+For every patch there will be a note that will include every detail. 
+This will be worked on and as I input information in the app I will delete patchnotes and when everything is gone I Will write..
+ "Check!
+Everything updated for patch X.X.X"
+
+So its clear for me where I am with updating the app. 
+
+After this I will update the Component "Footer" so it will include where this drafter is with updates. 
