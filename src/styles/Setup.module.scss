@@ -1,0 +1,30 @@
+.content {
+    display: grid;
+    grid-template-rows: auto auto auto; //InputFields | Buttons
+    // grid-template-columns: auto auto auto;
+    min-height: 100%;
+    min-width: 100%;
+    place-items: center;
+
+}
+
+.contentInput{
+    place-items:center;
+    // width: 100%;
+    color: white
+}
+
+.contentInformation {
+    color: white;
+}
+
+.contenButton {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content:space-around ;
+    
+}
+
+//contentInformation
+//contetButton
+//contentInput

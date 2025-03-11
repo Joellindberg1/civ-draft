@@ -3,7 +3,7 @@
 import {BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 //Components
-
+import Footer from "./Components/Footer/Footer"
 
 //Styles
 import './App.scss'
@@ -14,6 +14,7 @@ import Setup from "./pages/Setup"
 import BanPhaseLeaders from "./pages/BanPhaseLeaders"
 import BanPhaseCivs from "./pages/BanPhaseCivs"
 import FinalDraft from "./pages/FinalDraft"
+
 
 //Types
 
@@ -33,7 +34,7 @@ const App: React.FC = () => {
           <Route path="/banPhaseCivs" element={<BanPhaseCivs />} />
           <Route path="/FinalDraft" element={<FinalDraft />} />
         </Routes>
-        <footer/>
+        <Footer/>
       </div>
     </Router>
   );
