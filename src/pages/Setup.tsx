@@ -7,6 +7,10 @@ import Button from "../Components/Button/Button"
 import Header from "../Components/Header/Header"
 import InputField from "../Components/InputField/InputField"
 
+//Data
+import {leaders} from "../data/leaders"
+import {antiquityCivs} from "../data/antiquityCivs"
+
 //Types
 
 //Styles
@@ -21,20 +25,54 @@ const Setup: React.FC = () => {
 
     //State för input
     const [players, setPlayers] = useState<number>(2);
-    const [leaders, setLeaders] = useState<number>(3);
-    const [civs, setCivs] = useState<number>(3);
+    const [leadersPerPlayer, setLeadersPerPlayer] = useState<number>(3);
+    const [civsPerPlayer, setCivsPerPlayer] = useState<number>(2);
+
+    const totalLeaders = leaders.length;
+    const totalCivs = antiquityCivs.length;
+
+      // Beräkna hur många ledare och civs vi behöver
+    const requiredLeaders = players * leadersPerPlayer;
+    const requiredCivs = players * civsPerPlayer;
+
+    // Hur många bans kan göras?
+    const maxBansLeaders = Math.max(totalLeaders - requiredLeaders, 0);
+    const maxBansCivs = Math.max(totalCivs - requiredCivs, 0);
+
+    // Begränsa maxvärdet i input-fälten
+    const maxLeadersPerPlayer = Math.floor(totalLeaders / players);
+    const maxCivsPerPlayer = Math.floor(totalCivs / players);
 
     return (
         <>
           <Header text="Set up the draft" className="setup"/>
           <div className={styles.content}>
             <div className={styles.contentInput}>
-              <InputField label="How many players?" id="players" value={players} onChange={setPlayers} />
-              <InputField label="How many leaders per player?" id="leaders" value={leaders} onChange={setLeaders} />
-              <InputField label="How many civs per player?" id="civs" value={civs} onChange={setCivs} />
+              <InputField 
+                label="How many players?" 
+                id="players" 
+                value={players} 
+                onChange={setPlayers} />
+              <InputField 
+                label="How many leaders per player?" 
+                id="leaders" 
+                value={leadersPerPlayer} 
+                onChange={(val) => setLeadersPerPlayer(Math.min(val, maxLeadersPerPlayer))} />
+              <InputField 
+                label="How many civs per player?" 
+                id="civs" 
+                value={civsPerPlayer} 
+                onChange={(val) => setCivsPerPlayer(Math.min(val, maxCivsPerPlayer))} />
             </div>
             <div className={styles.contentInformation}>
-                <p>Information gällande banfasen osv....</p>
+                <p>
+                There are {totalLeaders} leaders available. Each player can choose {leadersPerPlayer} leaders, meaning a total of {requiredLeaders} leaders will be picked.
+                You can ban up to {maxBansLeaders} leaders ({Math.floor(maxBansLeaders / players)} per player).
+                </p>
+                <p>
+                There are {totalCivs} civilizations available. Each player can choose {civsPerPlayer} civs, meaning a total of {requiredCivs} civs will be picked.
+                You can ban up to {maxBansCivs} civs ({maxBansCivs > 0 ? Math.floor(maxBansCivs / players) : 0} per player).
+                </p>
             </div>
             <div className={styles.contentButton}>
               <Button text="Previous" onClick={() => navigate("/Home")} className="setup" />

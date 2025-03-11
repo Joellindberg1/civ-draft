@@ -1,6 +1,6 @@
 import { Civ } from "./types"
 
-const antiquityCivs:Civ [] = [
+export const antiquityCivs:Civ [] = [
     {
         id: 0,
         age: "Antiquity",
