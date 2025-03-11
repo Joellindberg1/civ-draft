@@ -1,6 +1,6 @@
 import { Leader } from "./types"
 
-const leaders:Leader [] = [
+export const leaders:Leader [] = [
     {
         id: 0,
         name: "Ada Lovelace",
