@@ -3,34 +3,41 @@
 @import "./styles/reset.scss";
 @import "./styles/layout.scss";
 
+
+
 .app-container {
   display: grid;
   grid-template-rows: auto 1fr auto; //Header | Content | Footer
-  min-height: 100vh;
+  min-height: 100dvh;
   place-items: center;
 }
 
-.header {
+Header {
   width: 100%;
-  background-color: #222;
+  background-color: #424242;
   color: white;
   text-align: center;
   padding: 15px 0;
 }
 
 .content {
+  color: white;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 200px;
+  margin: 200px;
   flex-grow: 1; // Ser till att content tar all tillgänglig höjd
 }
 
 footer {
   width: 100%;
-  background-color: #333;
+  background-color: #424242;
   color: white;
   text-align: center;
   padding: 10px 0;
+  
 }

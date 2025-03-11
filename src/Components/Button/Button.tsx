@@ -1,5 +1,7 @@
 import React from "react";
 
+import './Button.scss'
+
 interface ButtonProps {
   text: string;
   onClick: () => void;
