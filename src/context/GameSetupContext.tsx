@@ -4,6 +4,7 @@ import React, { createContext, useContext, useState } from "react";
 // Data
 import {leaders} from "../data/leaders";
 import {antiquityCivs} from "../data/antiquityCivs";
+import { Civ, Leader} from "../data/types"
 
 // interface
 interface GameSetupContextType {
@@ -15,6 +16,8 @@ interface GameSetupContextType {
   setCivsPerPlayer: (value: number) => void;
   totalLeaders: number;
   totalCivs: number;
+  leaders: Leader[];
+  antiquityCivs: Civ[];
 }
 
 //Context
@@ -34,7 +37,9 @@ export const GameSetupProvider: React.FC<{ children: React.ReactNode }> = ({ chi
       players, setPlayers, 
       leadersPerPlayer, setLeadersPerPlayer, 
       civsPerPlayer, setCivsPerPlayer, 
-      totalLeaders, totalCivs 
+      totalLeaders, totalCivs,
+      leaders: leaders,
+      antiquityCivs: antiquityCivs, 
     }}>
       {children}
     </GameSetupContext.Provider>
