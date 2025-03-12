@@ -1,0 +1,51 @@
+//react
+import React, { createContext, useContext, useState } from "react";
+
+// Data
+import {leaders} from "../data/leaders";
+import {antiquityCivs} from "../data/antiquityCivs";
+
+// interface
+interface GameSetupContextType {
+  players: number;
+  leadersPerPlayer: number;
+  civsPerPlayer: number;
+  setPlayers: (value: number) => void;
+  setLeadersPerPlayer: (value: number) => void;
+  setCivsPerPlayer: (value: number) => void;
+  totalLeaders: number;
+  totalCivs: number;
+}
+
+//Context
+const GameSetupContext = createContext<GameSetupContextType | undefined>(undefined);
+
+// Provider
+export const GameSetupProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const [players, setPlayers] = useState<number>(2);
+  const [leadersPerPlayer, setLeadersPerPlayer] = useState<number>(4);
+  const [civsPerPlayer, setCivsPerPlayer] = useState<number>(3);
+
+  const totalLeaders = leaders.length;
+  const totalCivs = antiquityCivs.length;
+
+  return (
+    <GameSetupContext.Provider value={{ 
+      players, setPlayers, 
+      leadersPerPlayer, setLeadersPerPlayer, 
+      civsPerPlayer, setCivsPerPlayer, 
+      totalLeaders, totalCivs 
+    }}>
+      {children}
+    </GameSetupContext.Provider>
+  );
+};
+
+//Hook för att använda Context
+export const useGameSetup = () => {
+  const context = useContext(GameSetupContext);
+  if (!context) {
+    throw new Error("useGameSetup must be used within a GameSetupProvider");
+  }
+  return context;
+};

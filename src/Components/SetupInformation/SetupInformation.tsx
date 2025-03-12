@@ -1,53 +1,58 @@
 //React
-import React, { useState } from "react";
-import styles from "./SetupInformation.module.scss";
+import React from "react";
 
 //Data
-import leaders from "../../data/leaders";
-import antiquityCivs from "../../data/antiquityCivs";
+
+//Context
+import { useGameSetup } from "../../context/GameSetupContext";
 
 //Style
-
+import styles from "../SetupInformation/SetupInformation.module.scss";
 
 //Interface
+interface SetupInformationProps {
+  title: string;
+  description: string;
+  children?: React.ReactNode;
+}
 
-
-
-const SetupInformation: React.FC<SetupInformationProps> = ({ children }) => {
-    // State för inputfält
-    const [players, setPlayers] = useState<number>(2);
-    const [leadersPerPlayer, setLeadersPerPlayer] = useState<number>(3);
-    const [civsPerPlayer, setCivsPerPlayer] = useState<number>(2);
+const SetupInformation: React.FC<SetupInformationProps> = ({ 
+  title,
+  description, 
+}) => {
+  const { players, leadersPerPlayer, civsPerPlayer, totalLeaders, totalCivs } = useGameSetup();
   
-    // Totalt antal ledare och civs
-    const totalLeaders = leaders.length; // 28 ledare
-    const totalCivs = antiquityCivs.length; // 11 civs
-  
-    // Beräkna hur många ledare och civs vi behöver
+    //Hur många ledare och civs kommer att slumpas ut
     const requiredLeaders = players * leadersPerPlayer;
     const requiredCivs = players * civsPerPlayer;
-  
-    // Hur många bans kan göras?
+
+    //Hur många bans kan man göra på civs och ledare utefter val. 
     const maxBansLeaders = Math.max(totalLeaders - requiredLeaders, 0);
     const maxBansCivs = Math.max(totalCivs - requiredCivs, 0);
-  
-    // Begränsa maxvärdet i input-fälten
-    const maxLeadersPerPlayer = Math.floor(totalLeaders / players);
-    const maxCivsPerPlayer = Math.floor(totalCivs / players);
-  
+    
+    // // Begränsa maxvärdet i input-fälten
+    // const maxLeadersPerPlayer = Math.floor(totalLeaders / players);
+    // const maxCivsPerPlayer = Math.floor(totalCivs / players);
+
     return (
       <div className={styles.infoBox}>
-        <p className={styles.text}>
-          There are <strong>{totalLeaders}</strong> leaders available. Each player can choose <strong>{leadersPerPlayer}</strong> leaders, meaning a total of <strong>{requiredLeaders}</strong> leaders will be picked.
-          You can ban up to <strong>{maxBansLeaders}</strong> leaders ({Math.floor(maxBansLeaders / players)} per player).
-        </p>
-        <p className={styles.text}>
-          There are <strong>{totalCivs}</strong> civilizations available. Each player can choose <strong>{civsPerPlayer}</strong> civs, meaning a total of <strong>{requiredCivs}</strong> civs will be picked.
-          You can ban up to <strong>{maxBansCivs}</strong> civs ({maxBansCivs > 0 ? Math.floor(maxBansCivs / players) : 0} per player).
-        </p>
-  
-        {/* Här kan Setup.tsx skicka in extra information */}
-        {children}
+        <h3 className={styles.title}>{title}</h3>
+        <p className={styles.text}>{description}</p>
+          <>
+            <p className={styles.text}>
+              Total leaders: {totalLeaders}
+              Total civs: {totalCivs}
+              Leaders som slumpas ut: {requiredLeaders}
+              Civs som slumpas ut: {requiredCivs}
+              Max bans for leaders: {maxBansLeaders}
+              Max bans for civs: {maxBansCivs}
+            </p>
+
+            <p className={styles.text}>
+              
+            </p>
+          </>
+
       </div>
     );
   };

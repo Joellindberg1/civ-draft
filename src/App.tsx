@@ -5,6 +5,9 @@ import {BrowserRouter as Router, Routes, Route } from "react-router-dom"
 //Components
 import Footer from "./Components/Footer/Footer"
 
+//context
+import { GameSetupProvider } from "./context/GameSetupContext"
+
 //Styles
 import './App.scss'
 
@@ -25,18 +28,20 @@ import FinalDraft from "./pages/FinalDraft"
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <div className="app-container">
-        <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/setup" element={<Setup />} />
-          <Route path="/banPhaseLeaders" element={<BanPhaseLeaders />} />
-          <Route path="/banPhaseCivs" element={<BanPhaseCivs />} />
-          <Route path="/FinalDraft" element={<FinalDraft />} />
-        </Routes>
-        <Footer/>
-      </div>
-    </Router>
+    <GameSetupProvider>
+      <Router>
+        <div className="app-container">
+          <Routes>
+            <Route path="/home" element={<Home />} />
+            <Route path="/setup" element={<Setup />} />
+            <Route path="/banPhaseLeaders" element={<BanPhaseLeaders />} />
+            <Route path="/banPhaseCivs" element={<BanPhaseCivs />} />
+            <Route path="/FinalDraft" element={<FinalDraft />} />
+          </Routes>
+          <Footer/>
+        </div>
+      </Router>
+    </GameSetupProvider>
   );
 };
 
