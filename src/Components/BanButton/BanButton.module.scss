@@ -1,0 +1,14 @@
+.banButton {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+
+  .banButton:hover {
+    background-color: darkred;
+  }
