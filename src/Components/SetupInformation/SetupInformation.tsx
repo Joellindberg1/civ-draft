@@ -18,14 +18,13 @@ interface SetupInformationProps {
 const SetupInformation: React.FC<SetupInformationProps> = ({ 
   title, 
 }) => {
-  const { players, leadersPerPlayer, civsPerPlayer, totalLeaders, totalCivs } = useGameSetup();
+  const { players, leadersPerPlayer, civsPerPlayer, totalLeaders, totalCivs, maxBansLeaders } = useGameSetup();
   
     //Hur många ledare och civs kommer att slumpas ut
     const requiredLeaders = players * leadersPerPlayer;
     const requiredCivs = players * civsPerPlayer;
 
     //Hur många bans kan man göra på civs och ledare utefter val. 
-    const maxBansLeaders = Math.max(totalLeaders - requiredLeaders, 0);
     const maxBansCivs = Math.max(totalCivs - requiredCivs, 0);
 
     const leaderBansPerPlayer = Math.floor(maxBansLeaders / players);

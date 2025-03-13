@@ -18,6 +18,7 @@ interface GameSetupContextType {
   totalCivs: number;
   leaders: Leader[];
   antiquityCivs: Civ[];
+  maxBansLeaders: number;
 }
 
 //Context
@@ -32,6 +33,8 @@ export const GameSetupProvider: React.FC<{ children: React.ReactNode }> = ({ chi
   const totalLeaders = leaders.length;
   const totalCivs = antiquityCivs.length;
 
+  const maxBansLeaders = Math.max(leaders.length - (players * leadersPerPlayer), 0);
+
   return (
     <GameSetupContext.Provider value={{ 
       players, setPlayers, 
@@ -40,6 +43,7 @@ export const GameSetupProvider: React.FC<{ children: React.ReactNode }> = ({ chi
       totalLeaders, totalCivs,
       leaders: leaders,
       antiquityCivs: antiquityCivs, 
+      maxBansLeaders
     }}>
       {children}
     </GameSetupContext.Provider>
