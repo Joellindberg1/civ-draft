@@ -91,6 +91,7 @@ export interface Civ {
 export interface Leader {
     id: number,
     name: string,
+    icon?: string,
     type1: Type,
     type2: Type,
     attribute: string[],
