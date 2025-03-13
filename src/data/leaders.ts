@@ -325,7 +325,7 @@ export const leaders:Leader [] = [
     },
     {
         id: 17,
-        name: "Jose Rizal",
+        name: "José Rizal",
         icon: "/src/icons/Leaders/jose_rizal.png",
         type1: "Cultural",
         type2: "Diplomatic",
