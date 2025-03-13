@@ -1,0 +1,51 @@
+.leaderCard {
+    background-color: #424242;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 275px;
+    height: 400px;
+    transition: 0.3s;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 1px 1px 5px white;
+  }
+
+  .leaderCard:hover {
+    box-shadow:1px 1px 15px aqua;
+    border-color: aqua;
+  }
+
+  .leaderIcon{
+    width: 200px; /* 🔥 Justera storleken */
+    height: 200px;
+    border-radius: 50%; /* 🔥 Gör ikonen rund */
+    object-fit: cover; /* 🔥 Förhindra distortion */
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  button{
+    position: relative;
+
+  }
+  
+  .banned {
+    background-color: rgba(255, 0, 0, 0.075); /* 🔥 Ändrar färg om ledaren är bannad */
+    color: rgba(255, 255, 255, 0.500);
+    border: 2px solid rgba(255, 0, 0, 0.500);
+    .leaderIcon{
+    opacity: 0.5;
+    }
+  }
+
+  .banned:hover{
+    box-shadow: 1px 1px 15px rgba(255, 0, 0, 0.500);
+    border-color: rgba(255, 0, 0, 0.500);
+    color: rgba(255, 255, 255, 0.750);
+  }
+
+
+
+  
