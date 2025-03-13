@@ -1,9 +1,12 @@
 import { Leader } from "./types"
 
+      
+
 export const leaders:Leader [] = [
     {
         id: 0,
         name: "Ada Lovelace",
+        icon: "/src/icons/Leaders/ada_lovelace.png",
         type1: "Cultural",
         type2: "Scientific",
         attribute: [
@@ -21,6 +24,7 @@ export const leaders:Leader [] = [
     {
         id: 1,
         name: "Amina",
+        icon: "/src/icons/Leaders/amina.png",
         type1: "Economic",
         type2: "Militaristic",
         attribute: [
@@ -38,6 +42,7 @@ export const leaders:Leader [] = [
     {
         id: 2,
         name: "Ashoka, World Conqueror",
+        icon: "/src/icons/Leaders/ashoka_world_conqueror.png",
         type1: "Diplomatic",
         type2: "Militaristic",
         attribute: [
@@ -57,6 +62,7 @@ export const leaders:Leader [] = [
     {
         id: 3,
         name: "Ashoka, World Renouncer",
+        icon: "/src/icons/Leaders/ashoka_world_renouncer.png",
         type1: "Diplomatic",
         type2: "Expansionist",
         attribute: [
@@ -75,6 +81,7 @@ export const leaders:Leader [] = [
     {
         id: 4,
         name: "Augustus",
+        icon: "/src/icons/Leaders/augustus.png",
         type1: "Cultural",
         type2: "Expansionist",
         attribute: [
@@ -93,6 +100,7 @@ export const leaders:Leader [] = [
     {
         id: 5,
         name: "Benjamin Franklin",
+        icon: "/src/icons/Leaders/benjamin_franklin.png",
         type1: "Diplomatic",
         type2: "Scientific",
         attribute: [
@@ -112,6 +120,7 @@ export const leaders:Leader [] = [
     {
         id: 6,
         name: "Catherine the Great",
+        icon: "/src/icons/Leaders/catherine_the_great.png",
         type1: "Cultural",
         type2: "Scientific",
         attribute: [
@@ -130,6 +139,7 @@ export const leaders:Leader [] = [
     {
         id: 7,
         name: "Charlemagne",
+        icon: "/src/icons/Leaders/charlemagne.png",
         type1: "Militaristic",
         type2: "Scientific",
         attribute: [
@@ -148,6 +158,7 @@ export const leaders:Leader [] = [
     {
         id: 8,
         name: "Confucius",
+        icon: "/src/icons/Leaders/confucius.png",
         type1: "Expansionist",
         type2: "Scientific",
         attribute: [
@@ -165,6 +176,7 @@ export const leaders:Leader [] = [
     {
         id: 9,
         name: "Friedrich, Baroque",
+        icon: "/src/icons/Leaders/friedrich_baroque.png",
         type1: "Cultural",
         type2: "Militaristic",
         attribute: [
@@ -182,6 +194,7 @@ export const leaders:Leader [] = [
     {
         id: 10,
         name: "Friedrich, Oblique",
+        icon: "/src/icons/Leaders/friedrich_oblique.png",
         type1: "Militaristic",
         type2: "Scientific",
         attribute: [
@@ -199,6 +212,7 @@ export const leaders:Leader [] = [
     {
         id: 11,
         name: "Harriet Tubman",
+        icon: "/src/icons/Leaders/harriet_tubman.png",
         type1: "Diplomatic",
         type2: "Militaristic",
         attribute: [
@@ -217,6 +231,7 @@ export const leaders:Leader [] = [
     {
         id: 12,
         name: "Hatshepsut",
+        icon: "/src/icons/Leaders/hatshepsut.png",
         type1: "Cultural",
         type2: "Economic",
         attribute: [
@@ -234,6 +249,7 @@ export const leaders:Leader [] = [
     {
         id: 13,
         name: "Himiko, High Shaman",
+        icon: "/src/icons/Leaders/himiko_high_shaman.png",
         type1: "Cultural",
         type2: "Diplomatic",
         attribute: [
@@ -252,6 +268,7 @@ export const leaders:Leader [] = [
     {
         id: 14,
         name: "Himiko, Queen of Wa",
+        icon: "/src/icons/Leaders/himiko_queen_of_wa.png",
         type1: "Diplomatic",
         type2: "Scientific",
         attribute: [
@@ -270,6 +287,7 @@ export const leaders:Leader [] = [
     {
         id: 15,
         name: "Ibn Battuta",
+        icon: "/src/icons/Leaders/ibn_battuta.png",
         type1: "Expansionist",
         type2: "Wildcard",
         attribute: [
@@ -288,6 +306,7 @@ export const leaders:Leader [] = [
     {
         id: 16,
         name: "Isabella",
+        icon: "/src/icons/Leaders/isabella.png",
         type1: "Economic",
         type2: "Expansionist",
         attribute: [
@@ -307,6 +326,7 @@ export const leaders:Leader [] = [
     {
         id: 17,
         name: "Jose Rizal",
+        icon: "/src/icons/Leaders/jose_rizal.png",
         type1: "Cultural",
         type2: "Diplomatic",
         attribute: [
@@ -326,6 +346,7 @@ export const leaders:Leader [] = [
     {
         id: 18,
         name: "Lafayette",
+        icon: "/src/icons/Leaders/lafayette.png",
         type1: "Cultural",
         type2: "Diplomatic",
         attribute: [
@@ -344,6 +365,7 @@ export const leaders:Leader [] = [
     {
         id: 19,
         name: "Machiavelli",
+        icon: "/src/icons/Leaders/machiavelli.png",
         type1: "Diplomatic",
         type2: "Economic",
         attribute: [
@@ -363,6 +385,7 @@ export const leaders:Leader [] = [
     {
         id: 20,
         name: "Napoleon, Emperor",
+        icon: "/src/icons/Leaders/napoleon_emperor.png",
         type1: "Economic",
         type2: "Diplomatic",
         attribute: [
@@ -380,7 +403,8 @@ export const leaders:Leader [] = [
     },
     {
         id: 21,
-        name: "Napol, Revolutionary",
+        name: "Napoleon, Revolutionary",
+        icon: "/src/icons/Leaders/napoleon_revolutionary.png",
         type1: "Militaristic",
         type2: "Cultural",
         attribute: [
@@ -398,6 +422,7 @@ export const leaders:Leader [] = [
     {
         id: 22,
         name: "Pachacuti",
+        icon: "/src/icons/Leaders/pachacuti.png",
         type1: "Economic",
         type2: "Expansionist",
         attribute: [
@@ -415,6 +440,7 @@ export const leaders:Leader [] = [
     {
         id: 23,
         name: "Simón Bolívar",
+        icon: "/src/icons/Leaders/simon_bolivar.png",
         type1: "Militaristic",
         type2: "Expansionist",
         attribute: [
@@ -432,6 +458,7 @@ export const leaders:Leader [] = [
     {
         id: 24,
         name: "Tecumseh",
+        icon: "/src/icons/Leaders/tecumseh.png",
         type1: "Militaristic",
         type2: "Diplomatic",
         attribute: [
@@ -449,6 +476,7 @@ export const leaders:Leader [] = [
     {
         id: 25,
         name: "Trung Trac",
+        icon: "/src/icons/Leaders/trung_trac.png",
         type1: "Militaristic",
         type2: "Scientific",
         attribute: [
@@ -467,6 +495,7 @@ export const leaders:Leader [] = [
     {
         id: 26,
         name: "Xerxes, King Of Kings",
+        icon: "/src/icons/Leaders/xerxes_king_of_kings.png",
         type1: "Economic",
         type2: "Militaristic",
         attribute: [
@@ -486,6 +515,7 @@ export const leaders:Leader [] = [
     {
         id: 27,
         name: "Xerxes, The Achaemenid",
+        icon: "/src/icons/Leaders/xerxes_the_achaemenid.png",
         type1: "Cultural",
         type2: "Economic",
         attribute: [
@@ -503,3 +533,4 @@ export const leaders:Leader [] = [
         unlocksModernCiv: [null]
     },
 ]
+
