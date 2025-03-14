@@ -1,0 +1,49 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    // padding: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.banCiv2{
+    font-size: small;
+    padding: 0;
+    margin: 0;
+}
+
+.civGrid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+    width: 98%;
+}
+
+.banPhaseContainer{
+    flex-grow: 1;
+    min-width: 100%;
+    overflow-y: auto;
+    max-height: calc(100vh - 160px);
+    padding-bottom: 100px;
+}
+
+.buttonContainer {
+    position: absolute;
+    bottom: 100px; /* 🔥 Anpassa höjd så de flyter över korten */
+    left: 50%;
+    transform: translateX(-50%); /* 🔥 Centrerar knapparna */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: auto;
+    border-radius: 25px;
+    background: #424242d3; /* 🔥 Ingen bakgrund */
+    padding: 15px;
+    pointer-events: none; /* 🔥 Gör att den inte blockar klick */
+}
+.buttonContainer button {
+    pointer-events: auto;
+}

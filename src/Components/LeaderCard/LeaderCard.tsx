@@ -3,18 +3,12 @@ import React, { useState } from "react";
 
 //Styles
 import styles from "./LeaderCard.module.scss"
-import BanButton from "../BanButton/BanButton";
+import BanButton from "../BanButton/BanButton"
 
-interface Leader {
-  id: number;
-  name: string;
-  type1: string;
-  type2: string;
-  startBias: string[];
-  attribute: string[];
-  agenda: { name: string; effect: string };
-  icon?: string;
-  }
+//Type
+import {Leader} from "../../data/types"
+
+
 
 interface LeaderCardProps {
     leader: Leader;
