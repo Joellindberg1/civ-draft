@@ -4,6 +4,7 @@ export const antiquityCivs:Civ [] = [
     {
         id: 0,
         age: "Antiquity",
+        icon: "/src/icons/Civs/aksumite.png",
         name: "Aksum",
         type1: "Cultural",
         type2: "Economic",
@@ -104,6 +105,7 @@ export const antiquityCivs:Civ [] = [
         id: 1,
         age: "Antiquity",
         name: "Carthage",
+        icon: "/src/icons/Civs/carthaginian.png",
         type1: "Militaristic",
         type2: "Economic",
         attribute: [
@@ -243,6 +245,7 @@ export const antiquityCivs:Civ [] = [
         id: 2,
         age: "Antiquity",
         name: "Egypt",
+        icon: "/src/icons/Civs/egyptian.png",
         type1: "Cultural",
         type2: "Economic",
         attribute: [
@@ -362,6 +365,7 @@ export const antiquityCivs:Civ [] = [
         id: 3,
         age: "Antiquity",
         name: "Greek",
+        icon: "/src/icons/Civs/greek.png",
         type1: "Cultural",
         type2: "Diplomatic",
         attribute: [
@@ -489,6 +493,7 @@ export const antiquityCivs:Civ [] = [
         id: 4,
         age: "Antiquity",
         name: "Han",
+        icon: "/src/icons/Civs/han.png",
         type1: "Diplomatic",
         type2: "Scientific",
         attribute: [
@@ -580,6 +585,7 @@ export const antiquityCivs:Civ [] = [
         id: 5,
         age: "Antiquity",
         name: "Khmer",
+        icon: "/src/icons/Civs/khmer.png",
         type1: "Expansionist",
         type2: "Scientific",
         attribute: [
@@ -680,6 +686,7 @@ export const antiquityCivs:Civ [] = [
         id: 6,
         age: "Antiquity",
         name: "Maurya",
+        icon: "/src/icons/Civs/mauryan.png",
         type1: "Militaristic",
         type2: "Scientific",
         attribute: [
@@ -803,6 +810,7 @@ export const antiquityCivs:Civ [] = [
         id: 7,
         age: "Antiquity",
         name: "Maya",
+        icon: "/src/icons/Civs/maya.png",
         type1: "Diplomatic",
         type2: "Scientific",
         attribute: [
@@ -927,6 +935,7 @@ export const antiquityCivs:Civ [] = [
         id: 8,
         age: "Antiquity",
         name: "Mississippian",
+        icon: "/src/icons/Civs/mississippian.png",
         type1: "Economic",
         type2: "Expansionist",
         attribute: [
@@ -1023,6 +1032,7 @@ export const antiquityCivs:Civ [] = [
         id: 9,
         age: "Antiquity",
         name: "Persia",
+        icon: "/src/icons/Civs/persian.png",
         type1: "Economic",
         type2: "Militaristic",
         attribute: [
@@ -1118,6 +1128,7 @@ export const antiquityCivs:Civ [] = [
         id: 10,
         age: "Antiquity",
         name: "Rome",
+        icon: "/src/icons/Civs/roman.png",
         type1: "Cultural",
         type2: "Militaristic",
         attribute: [
