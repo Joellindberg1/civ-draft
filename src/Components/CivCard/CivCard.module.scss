@@ -1,0 +1,112 @@
+.civCard {
+    background-color: #424242;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 295px;
+    height: 400px;
+    transition: 0.3s;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 1px 1px 5px white;
+  }
+
+  .civCard:hover {
+    box-shadow:1px 1px 15px aqua;
+    border-color: aqua;
+  }
+
+  .infoButton {
+    top: 30px;
+    left: 90px;
+    cursor: pointer;
+    font-size: large;
+    border: none;
+    background: none;
+    position: relative;
+    //   width: 50px;
+    //   height: 50px;
+    //   color: aqua;
+    //   border-style: solid;
+    //   border-radius: 99%;
+    //   padding:5px;
+  }
+
+  .popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7); /* 🔥 Mörk overlay men synlig bakgrund */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* 🔥 Pop-up kortet */
+.popupContent {
+    background: #424242de;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 700px;
+    height: 90%;
+    max-width: 700px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    box-shadow: 5px 5px 15px #424242;
+    .civIconPopup{
+      border-radius: 50%;
+    }
+}
+
+/* 🔥 Stäng-knappen (X) */
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 0, 0, 0.644);
+    border: none;
+    border-radius: 100%;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+  .civIcon{
+    width: 200px; /* 🔥 Justera storleken */
+    height: 200px;
+    border-radius: 50%; /* 🔥 Gör ikonen rund */
+    object-fit: cover; /* 🔥 Förhindra distortion */
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .banButton{
+    position: relative;
+
+  }
+  
+  .banned {
+    background-color: rgba(255, 0, 0, 0.075); /* 🔥 Ändrar färg om ledaren är bannad */
+    color: rgba(255, 255, 255, 0.500);
+    border: 2px solid rgba(255, 0, 0, 0.500);
+    .civIcon{
+    opacity: 0.5;
+    }
+  }
+
+  .banned:hover{
+    box-shadow: 1px 1px 15px rgba(255, 0, 0, 0.500);
+    border-color: rgba(255, 0, 0, 0.500);
+    color: rgba(255, 255, 255, 0.750);
+  }
+
+
+
+  
