@@ -39,6 +39,7 @@ export interface Civ {
     id: number,
     age: "Antiquity" | "Exploration" | "Modern",
     name: string,
+    icon: string;
     type1: Type,
     type2: Type,
     attribute: string[],
