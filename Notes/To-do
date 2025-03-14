@@ -1,0 +1,23 @@
+- API (Lägga till någon form av API för att öva och som kan vara roligt.) 
+    - wikipedia api för ledarna och civsen för historisk fakta
+    - Esri ArcGIS API för geografiska och historiska kartor för ledare och civs
+    - Chatbot för civ 7 strategi - Hjälpa folk att välja ledare + civ tillsammans och vad som kan vara en bra strategi för dessa tillsammans. 
+    - Google translate för att översätta sidan till flera olika språk. 
+    - 
+
+- banLeaderPhase
+    - Fixa så att man inte kan banna fler ledare än vad som faktiskt är möjligt för setup fasen i draften.
+        * Om man försöker banna fler än vad som är tillåtet, ordna en popup så att man förstår att det är pga det och att man behöver unbana någon annan för att banna fler. 
+    - Kolla hur det ser ut med knapparna på footern istället, eller att helt enkelt bara ha dem längst ner. 
+    - Någon typ av sort funktion som gör att det är möjligt att bara kolla upp "Cultural" leaders eller sortera på andra typer av saker som är rimliga om det är så att man vill banna t ex bara culturella ledare. 
+
+- Setup sidan
+    - fixa radio buttons för vilken ålder det är man ska köra på 
+    - Fixa ett val för ifall man ska randomniza map också och ifall det ska vara en banfas för olika maps
+        * Om det ska vara random på map och inte ban så visas inte den sidan utan map slumpas bara till final draften
+        * Om man ska kunna banna olika maps så visas en ban sida likt leader och civ för maps där man visar en skuggad version av hur en karta kan se ut. 
+
+- Map bans (Skapa)
+
+- Overall
+    - Fixa någon civ 7 leader som jag kan lägga in till bakgrunden för att det ska vara lite roligare och mer interaktiv, jag har en mörk bakgrund så jag behöver tänka på hur den poppar ut
