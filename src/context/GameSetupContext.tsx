@@ -27,9 +27,9 @@ const GameSetupContext = createContext<GameSetupContextType | undefined>(undefin
 
 // Provider
 export const GameSetupProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [players, setPlayers] = useState<number>(2);
-  const [leadersPerPlayer, setLeadersPerPlayer] = useState<number>(4);
-  const [civsPerPlayer, setCivsPerPlayer] = useState<number>(3);
+  const [players, setPlayers] = useState(2);
+  const [leadersPerPlayer, setLeadersPerPlayer] = useState(4);
+  const [civsPerPlayer, setCivsPerPlayer] = useState(3);
 
   const totalLeaders = leaders.length;
   const totalCivs = antiquityCivs.length;
