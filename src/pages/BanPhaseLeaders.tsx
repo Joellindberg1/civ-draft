@@ -66,10 +66,12 @@ const BanPhaseLeaders: React.FC = () => {
               ))}
             </div>
         </div>
-        <div className={styles.buttonContainer}>
-          <Button text="Previous" onClick={() => navigate("/Setup")} className="banLeader" />
-          <Button text="Continue" onClick={() => navigate("/BanPhaseCivs")} className="banLeader" />
-        </div>
+          <div className={styles.buttonContainerLeft}>
+          <Button text="<" onClick={() => navigate("/Setup")} className="banLeader" />
+          </div>
+          <div className={styles.buttonContainerRight}>
+          <Button text=">" onClick={() => navigate("/BanPhaseCivs")} className="banLeader" />
+          </div>
       </div>
       </>
       );

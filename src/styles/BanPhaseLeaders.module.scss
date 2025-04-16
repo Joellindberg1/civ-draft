@@ -29,7 +29,13 @@
     max-height: calc(100vh - 160px);
     padding-bottom: 100px;
 }
+.buttonContainerLeft {
+    display: flex;
+}
 
+.buttonContainerRight {
+    display: flex;
+}
 .buttonContainer {
     position: absolute;
     bottom: 100px; /* 🔥 Anpassa höjd så de flyter över korten */

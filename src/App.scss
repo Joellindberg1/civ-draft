@@ -10,6 +10,8 @@
   grid-template-rows: auto 1fr auto; //Header | Content | Footer
   min-height: 100dvh;
   place-items: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 Header {
@@ -19,7 +21,8 @@ Header {
   color: white;
   text-align: center;
   max-height: 100px;
-  padding: px 0;
+  padding: 0px;  
+  margin: 0px;                                     
 }
 
 .content {
